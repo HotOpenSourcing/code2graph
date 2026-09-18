@@ -9,7 +9,6 @@
 *.pdb
 
 # IDE and Editor files
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -29,8 +28,6 @@
 *.e4product
 
 # Environment and configuration
-.env
-.env.local
 .env.*.local
 .envrc
 resource
@@ -116,3 +113,4 @@ dmypy.json
 # source tree + binary `index.scip` per repo would balloon the tree and pull
 # in foreign licenses. The published numbers live in `eval/REAL-REPO-SCORECARD.md`.
 eval/corpus/*_realrepo/
+config.bat

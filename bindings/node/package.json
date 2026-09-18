@@ -1,7 +1,7 @@
 {
   "name": "@nodedb-lab/code2graph",
   "version": "0.0.0",
-  "description": "Source code to structural graph facts — Node.js/Bun bindings",
+  "description": "Source code to structural graph facts \u2014 Node.js/Bun bindings",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -27,8 +27,8 @@
     ]
   },
   "scripts": {
-    "build": "napi build --platform --release && npm run harden-loader && npm run harden-types",
-    "build:debug": "napi build --platform && npm run harden-loader && npm run harden-types",
+    "build": "node init && napi build --platform --release && npm run harden-loader && npm run harden-types",
+    "build:debug": "node init && napi build --platform && npm run harden-loader && npm run harden-types",
     "harden-loader": "node scripts/harden-loader.cjs",
     "harden-types": "node scripts/harden-types.cjs",
     "test": "node test/loader.test.cjs && node test/query.test.cjs"
